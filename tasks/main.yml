@@ -1,0 +1,5 @@
+- name: Installeren Apache
+  ansible.builtin.package:
+    name: "{{ programma }}"
+    state: present
+  notify: Starten Apache
